@@ -1,0 +1,112 @@
+body {
+  font-family: 'Bangers', cursive;
+  background-color: yellow;
+}
+
+.jumbotron {
+  margin-top: 25px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  background-image: url("../images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+#instructions {
+  font-size: 20px;
+}
+
+#instructions button {
+  background-color: white;
+}
+
+#statistics {
+  margin-top: 30px;
+  background-color: #4775d1;
+}
+
+#how-to-play-show {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #212529;
+}
+
+a:hover {
+  color: #212529;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#verdict {
+  font-size: 200px;
+  color: purple;
+  text-shadow: 2px, 2px;
+}
+
+#statistics li {
+  font-size: 50px;
+}
+#results p, #results {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+#results button {
+  background-color: #00FF00;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+#you-played {
+  margin-right: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  #paper {
+    margin-right: 7.5px;
+    margin-left: 7.5px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+#statistics li {
+    display: inline-block;
+    margin: 40px;
+  }
+}
+
+/* Container needed to position the button. Adjust the width as needed */
+.button {
+  position: relative;
+}
+
+/* Make the image responsive */
+.button img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.button .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 100px;
+  background-color: transparent;
+}
+
+#buttons img {
+  margin-top: 20px;
+  border-radius: 15px;
+}

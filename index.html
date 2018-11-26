@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial scale=1.0" />
+
+  <title>Rock Paper Scissors</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css" />
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container-fluid jumbotron">
+
+    <section id="instructions">
+      <button id="how-to-play-show">How to play</button>
+      <div id="how-to-play">
+        <p>Decide which of rock, paper or scissors you would like to play.</p>
+        <p>Click on the button corresponding to your choice.</p>
+        <p>The machine will tell you if won, lost or drew.</p>
+        <p>Play again!</p>
+        <p>What beats what:</p>
+        <ul>
+          <li>rock beats scissors</li>
+          <li>scissors beats paper</li>
+          <li>paper beats rock</li>
+        </ul>
+        <p>A record of how you've been doing is at the <a href="#statistics">bottom of the page</a>.</p>
+        <button id="how-to-play-hide">Hide instructions</button>
+      </div><!-- /#how-to-play -->
+    </section><!-- /#instructions -->
+
+    <section>
+      <div class="container text-center">
+        <div id="header" class="row">
+          <h1 class="display-1 col-md-4">Rock</h1>
+          <h1 class="display-1 col-md-4">Paper</h1>
+          <h1 class="display-1 col-md-4">Scissors</h1>
+        </div><!-- /#header -->
+      </div><!-- /.container -->
+    </section>
+  </div><!-- /.jumbotron -->
+
+
+    <section id="buttons">
+      <div class="row">
+
+      <div class="col-md-4">
+    <div class="container button">
+
+    <img class="img-fluid" src="images/rock.jpg" alt="Cartoon style rock."/>
+    <button class="btn" id="rock" value="rock">Rock</button>
+    </div>
+    </div>
+
+<div class="col-md-4">
+    <div class="container button">
+
+    <img class="img-fluid" src="images/paper.jpg" alt="Cartoon piece of lined holed paper."/>
+    <button class="btn" id="paper" value="paper">Paper</button>
+    </div>
+    </div>
+
+      <div class="col-md-4">
+    <div class="container button">
+
+    <img class="img-fluid" src="images/scissors.jpg" alt="Cartoon style scissors."/>
+    <button class="btn" id="scissors" value="scissors">Scissors</button>
+    </div>
+    </div>
+
+</div>
+    </section><!-- /#buttons -->
+
+  <div class="container-fluid text-center">
+    <section id="results">
+
+      <p><span id="verdict"></span></p>
+
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6">
+            <p id="you-played">You played: <span id="play_you"></span></p>
+          </div>
+          <div class="col-md-6">
+            <p>The machine played: <span id="play_machine"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <button id="play-again">Play again</button>
+
+    </section><!-- /#results -->
+
+    <section id="statistics">
+      <ul>
+        <li>Games played: <span id="game_played">0</span></li>
+        <li>Games won: <span id="game_won">0</span></li>
+        <li>Games lost: <span id="game_lost">0</span></li>
+        <li>Games drawn: <span id="game_drew">0</span></li>
+      </ul>
+    </section><!-- /#statistics -->
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/engine.js"></script>
+  </div><!-- /.container-fluid text-center -->
+
+</body>
+
+</html>
